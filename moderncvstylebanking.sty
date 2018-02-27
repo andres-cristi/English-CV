@@ -74,13 +74,14 @@
   \savebox{\maketitletempbox}{}%
   \setlength{\maketitleboxwidth}{0pt}}
 \renewcommand*{\maketitle}{%
-  \setlength{\maketitlewidth}{0.8\textwidth}%
+  \setlength{\maketitlewidth}{0.9\textwidth}%
   \hfil%
   \parbox{\maketitlewidth}{%
     \centering%
     % name and title
     \namestyle{\@firstname~\@lastname}%
-    \ifthenelse{\equal{\@title}{}}{}{\titlestyle{~|~\@title}}\\% \isundefined doesn't work on \@title, as LaTeX itself defines \@title (before it possibly gets redefined by \title) 
+    \par 
+    \ifthenelse{\equal{\@title}{}}{}{\titlestyle{\@title}}\\% \isundefined doesn't work on \@title, as LaTeX itself defines \@title (before it possibly gets redefined by \title) 
     % detailed information
     \addressfont\color{color2}%
     \ifthenelse{\isundefined{\@addressstreet}}{}{\addtomaketitle{\addresssymbol\@addressstreet}%
@@ -92,7 +93,7 @@
     \ifthenelse{\isundefined{\@email}}{}{\addtomaketitle{\emailsymbol\emaillink{\@email}}}%
     \ifthenelse{\isundefined{\@homepage}}{}{\addtomaketitle{\homepagesymbol\httplink{\@homepage}}}%
     \ifthenelse{\isundefined{\@extrainfo}}{}{\addtomaketitle{\@extrainfo}}%
-    \flushmaketitle}\\[2.5em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
+    \flushmaketitle}\\[2.0em]}% need to force a \par after this to avoid weird spacing bug at the first section if no blank line is left after \maketitle
 
 
 %-------------------------------------------------------------------------------
@@ -158,7 +159,7 @@
   \par}% to avoid weird spacing bug at the first section if no blank line is left after \maketitle}
 
 \RenewDocumentCommand{\section}{sm}{%
-  \par\addvspace{2.5ex}%
+  \par\addvspace{2.2ex}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#2}%
   \strut\sectionstyle{#2}%
@@ -194,7 +195,7 @@
     {}%
     {\listitemsymbol\begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#3\end{minipage}}}}
 
-\renewcommand*{\cventry}[7][.25em]{
+\renewcommand*{\cventry}[7][.24em]{
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}%
 	  {\bfseries #4} & {\bfseries #5} \\%
 	  {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%

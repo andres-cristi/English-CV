@@ -1,0 +1,155 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Andrés Ignacio}{Cristi Espinosa}
+\title{PhD. Student in Engeneering Systems}                               % optional, remove / comment the line if not wanted
+\address{Departamento de Ingeniería Industrial, Domeyko 2338}{Santiago, Chile}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+56998962028}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{acristi@dim.uchile.cl}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{rut: 18.169.329-0}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{Andres.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2018--Present}{PhD. Student in Engineering Systems}{Universidad de Chile}{Santiago, Chile}{}{}
+\cventry{2016--2018}{M.Sc. Operations Management}{Universidad de Chile}{Santiago, Chile}{}{Thesis Title: \emph{Estabilidad y Aleatoriedad en Admisión Escolar} \newline
+Advisor: Prof. Jos\'e Rafael Correa (Department of Industrial Engineering)}
+\cventry{2011--2016}{B.Sc. Engineering Mathematics}{Universidad de Chile}{Santiago, Chile}{}{}  % arguments 3 to 6 can be left empty
+
+
+\section{Experience}
+
+
+\subsection{Research}
+\cventry{May--July 2017}{Research Internship}{Max Planck Institut for Informatics}{Saarbrücken, Germany}{}{Visiting Antonios Antoniadis, funded by the MPII-UChile Collaborative Grant CONICYT: Fast Approximation Algorithms for Massive Data Sets.}
+
+\cventry{Spring 2015}{Research Assistant}{Center for Mathematical Modeling, FCFM Universidad de Chile
+}{Santiago, Chile}{}{Working in the Astroinformatics Laboratory on problem 'Multiobjective optimization for scheduling of the LSST', under supervision of Francisco Förster, researcher of CMM.}
+
+
+
+\subsection{Teaching}
+\cventry{Spring 2017}{Teaching Assistant - Stochastic Models for Engineering Systems}{Universidad de Chile}{}{}{As assistant of Prof. Jos\'e Rafael Correa (Department of Industrial Engineering).}
+\cventry{Spring 2016}{Teaching Assistant - Linear Algebra}{Universidad de Chile}{}{}{As assistant of Prof. Jaime Ortega (Department of Mathematical Engineering).}
+\cventry{Spring 2015}{Teaching Assistant - Stochastic Simulation}{Universidad de Chile}{}{}{As assistant of Prof. Joaquín Fontbona (Department of Mathematical Engineering).}
+\cventry{2015 and 2016}{Teaching Assistant - Markov Processes}{Universidad de Chile}{}{}{As assistant of  Prof. Servet Martínez (Department of Mathematical Engineering).}
+\cventry{2014 and 2015}{Teaching Assistant - Statistics}{Universidad de Chile}{}{}{As assistant of Prof. Raul Gouet (Department of Mathematical Engineering).}
+\cventry{Spring 2014}{Teaching Assistant - Probability and Statistics}{Universidad de Chile}{}{}{As assistant of Prof. Servet Martínez (Department of Mathematical Engineering).}
+\cventry{2013, 2014, 2015 and 2016}{Teaching Assistant - Introduction to Calculus}{Universidad de Chile}{}{}{As assistant of Prof. Jorge San Martín and Prof. Raúl Gormaz (Department of Mathematical Engineering).}
+
+
+\subsection{Professional Internships}
+\cventry{January and February 2016}{Third Professional Internship}{Navigo Mining SpA.}{Santiago, Chile}{}{Reviewing and programming Machine Learning algorithms for prediction in the Mining Industry.}
+\cventry{January 2015}{Second Professional Internship}{Open Mine Planning Technologies Lab., Universidad Adolfo Ibáñez}{Santiago, Chile}{}{Reviewing and assisting the developement of algorithms for open pit mine planning.}
+\cventry{January 2014}{First Professional Internship}{Antofagasta Minerals S.A.}{Santiago, Chile}{}{Collaborating in the process of developing a predictive model of the seismic vulnerability of a mineral processing plant.}
+
+\subsection{Other Experience}
+\cventry{2017}{Graduate Students Delegate}{Universidad de Chile Student Federation}{}{}{}
+\cventry{2016}{President of the Engineering Mathematics Student Union}{Engineering Mathematics Student Union, Universidad de Chile}{}{}{} 
+\cventry{2015}{Student Federation Council Member}{Universidad de Chile Student Federation}{}{}{}
+\cventry{2013 and 2014}{Department Representative, Engineering Mathematics}{Universidad de Chile}{}{}{}
+\cventry{2011}{Course Representative}{Universidad de Chile}{}{}{}
+
+
+\section{Research Interests}
+\cvlistitem{Operations Research, Algorithmic Game Theory,  Mechanism Design, Stochastic Processes, Optimization Algorithms, Randomized Algorithms.}
+
+
+\section{Proficiencies}
+\subsection{Languages}
+\cvitemwithcomment{Spanish}{Native}{}
+\cvitemwithcomment{English}{Fluent}{}
+\subsection{Computer}
+\cvitem{}{Microsoft Windows, Linux, Mac OS.}
+\cvitem{}{Microsoft Office, Libre Office, \LaTeX.}
+\cvitem{}{Python, Matlab, Scilab, R, AMPL (CPLEX), git}
+
+
+
+
+\section{Scholarships and Awards}
+\cvitem{}{CONICYT (Chilean national agency for science and technology) PhD. Grant, 2018.}
+\cvitem{}{CONICYT Scholarship for M.Sc. Students, 2017.}
+\cvitem{}{Engineering Mathematics Outstanding Student, 2014 and 2015.}
+\cvitem{}{Common Engineering Programme Outstanding Student, 2011 and 2012.}
+\cvitem{}{’Andrés Bello’ Scholarship for Academic Excellence, 2011--2016.}
+\cvitem{}{Bronze Medal, XV Ibero-American Physics Olympiad, Panama 2010.}
+\cvitem{}{Gold Medal, Chilean Physics Olympiad, 2010.}
+
+
+\section{Attended Conferences, Workshops and Summer Schools}
+\cventry{January 2018}{Attendant and T.A. of the course of Prof. Kurt Mehlhorn.}{XIII Discrete Mathematics Summer School}{Valparaíso, Chile}{}{}
+\cventry{June 2017}{(HALG).}{Highlights of Algorithms}{Berlin, Germany}{}{}
+\cventry{June 2017}{\emph{\textbf{and Scheduling Problems}} (MAPSP).}{Workshop on Models and Algorithms for Planning}{Seeon-Seebruck, Germany}{}{}
+\cventry{January 2017}{}{International Collaboration Workshop in Algorithms}{Santiago, Chile}{}{}
+\cventry{January 2017}{}{XII Discrete Mathematics Summer School}{Valparaíso, Chile}{}{}
+
+
+\section{Working Papers (under submission)}
+\cvitem{}{\textbf{A Near Optimal Mechanism for Energy Aware Scheduling} (with A. Antoniadis) \emph{Under submission to conference: International Colloquium on Automata, Languages, and Programming (ICALP)}}
+\cvitem{}{\textbf{SUPERSET: A (Super)Natural Variant of the Card Game SET} (with F. Botler, R. Hoeksma, K. Schewior and A. Tönnis) \emph{Under submission to conference: International Conference on Fun with Algorithms (FUN)}}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
